@@ -30,6 +30,11 @@ public class City {
 		this.name = name;
 	}
 
+	public City(City entity) {
+		id = entity.getId();
+		name = entity.getName();
+	}
+
 	public Long getId() {
 		return id;
 	}

@@ -32,7 +32,7 @@ public class CityControllerIT {
 	
 	@Test
 	public void findAllShouldReturnAllResourcesSortedByName() throws Exception {
-		
+	//ok
 		ResultActions result =
 				mockMvc.perform(get("/cities")
 					.contentType(MediaType.APPLICATION_JSON));
@@ -45,7 +45,7 @@ public class CityControllerIT {
 	
 	@Test
 	public void insertShouldInsertResource() throws Exception {
-
+	//ok
 		CityDTO dto = new CityDTO(null, "Recife");
 		String jsonBody = objectMapper.writeValueAsString(dto);
 		
